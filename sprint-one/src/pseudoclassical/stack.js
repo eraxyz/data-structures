@@ -3,13 +3,13 @@ var Stack = function() {
   // but try not not reference your old code in writing the new style.
   this.storage = {
     size: 0
-  }
+  };
 
 };
 
 Stack.prototype.size = function() {
   return this.storage.size;
-}
+};
 Stack.prototype.pop = function() {
   if (this.storage.size > 0) {
     this.storage.size--;
@@ -17,7 +17,7 @@ Stack.prototype.pop = function() {
   var result = this.storage[this.storage.size];
   delete this.storage[this.storage.size];
   return result;
-}
+};
 Stack.prototype.push = function(value) {
   this.storage[this.storage.size++] = value;
-}
+};

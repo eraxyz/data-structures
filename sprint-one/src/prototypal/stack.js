@@ -4,7 +4,7 @@ var Stack = function() {
   var obj = Object.create(stackMethods);
   obj.storage = {
     size: 0
-  }
+  };
 
   return obj;
 };
@@ -14,7 +14,7 @@ var stackMethods = {
     return this.storage.size;
   },
   pop: function() {
-    if (this.storage.size > 0){
+    if (this.storage.size > 0) {
       this.storage.size--;
     }
     var result = this.storage[this.storage.size];

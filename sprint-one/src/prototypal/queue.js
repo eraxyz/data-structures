@@ -5,7 +5,7 @@ var Queue = function() {
 
   obj.storage = {
     size: 0
-  }
+  };
 
   return obj;
 
@@ -19,7 +19,7 @@ var queueMethods = {
     this.storage[this.storage.size++] = value;
   },
   dequeue: function() {
-    if (this.storage.size === 0){
+    if (this.storage.size === 0) {
       return;
     }
     var i = 0;
